@@ -1,0 +1,23 @@
+:host {
+  .card-header {
+    font-size: 3.5rem;
+    @media (min-width: 425px) {
+      font-size: 4.5rem;
+    }
+  }
+
+  .card-body {
+    font-size: 3rem;
+    color: #ff4dc1;
+  }
+
+  .card-actions {
+    button {
+      background-image: linear-gradient(-180deg, #ff78cf 0%, #ff18b0 99%);
+      box-shadow: 0 2px 0 0 #b00e78;
+      border-radius: 27.5px;
+      color: #ffffff;
+      font-size: 2.2rem;
+    }
+  }
+}

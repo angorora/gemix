@@ -1,0 +1,42 @@
+:host {
+  .bonus-card {
+     margin: 0 auto;
+    padding: 15px;
+    font-family: HelveticaNeue-Medium;
+    background: #ffffff;
+    box-shadow: 0 4px 0 0 rgba(0, 0, 0, 0.5);
+    border-radius: 4px;
+    width: 80%;
+    height: 290px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    @media (min-width: 425px) {
+      width: 600px;
+      height: 290px;
+    }
+    ::ng-deep {
+      .card-header {
+        width: 100%;
+      
+        text-align: center;
+      }
+      .card-body {
+        width: 100%;
+
+        letter-spacing: 0;
+        text-align: center;
+        line-height: 35px;
+      }
+      .card-actions {
+        width: 100%;
+        button {
+          width: 193px;
+          height: 55px;
+          border: none;
+        }
+      }
+    }
+  }
+}

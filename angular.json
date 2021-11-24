@@ -124,5 +124,10 @@
       }
     }
   },
-  "defaultProject": "gemix"
+  "defaultProject": "gemix",
+  "schematics": {
+    "@schematics/angular:component": {
+      "styleext": "scss"
+    }
+  }
 }

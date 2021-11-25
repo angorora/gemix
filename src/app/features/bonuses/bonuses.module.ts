@@ -4,6 +4,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { BonusDisplayComponent } from './bonus-display/bonus-display.component';
 import { SharedModule } from 'src/app/shared/shared.module';
 import { BonusClaimSuccessComponent } from './bonus-claim-success/bonus-claim-success.component';
+import { NotFoundComponent } from 'src/app/shared/not-found/not-found.component';
 
 const routes: Routes = [
   {
@@ -11,8 +12,12 @@ const routes: Routes = [
     component:BonusDisplayComponent
   },
   {
-    path:"claim-success",
+    path:"claim-success/:bonus",
     component:BonusClaimSuccessComponent
+  },
+  {
+    path:"**",
+    component:NotFoundComponent
   }
 ];
 

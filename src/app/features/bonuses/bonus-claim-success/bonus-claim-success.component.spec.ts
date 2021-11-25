@@ -1,4 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { ActivatedRoute } from '@angular/router';
+import { from, of } from 'rxjs';
 
 import { BonusClaimSuccessComponent } from './bonus-claim-success.component';
 
@@ -8,7 +10,16 @@ describe('BonusClaimSuccessComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ BonusClaimSuccessComponent ]
+      declarations: [ BonusClaimSuccessComponent ],
+   
+      providers: [
+        {
+          provide: ActivatedRoute,
+          useValue: {
+            paramMap: of({params:{params:{amount:2,price:"Free",game:"Gemix",countdown: 25}}})
+          }
+        }
+      ]
     })
     .compileComponents();
   });

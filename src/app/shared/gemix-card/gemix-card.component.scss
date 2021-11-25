@@ -1,8 +1,7 @@
 :host {
   .bonus-card {
-     margin: 0 auto;
+    margin: 0 auto;
     padding: 15px;
-    font-family: HelveticaNeue-Medium;
     background: #ffffff;
     box-shadow: 0 4px 0 0 rgba(0, 0, 0, 0.5);
     border-radius: 4px;
@@ -19,12 +18,10 @@
     ::ng-deep {
       .card-header {
         width: 100%;
-      
         text-align: center;
       }
       .card-body {
         width: 100%;
-
         letter-spacing: 0;
         text-align: center;
         line-height: 35px;

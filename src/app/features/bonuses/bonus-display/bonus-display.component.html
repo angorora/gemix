@@ -1,11 +1,16 @@
 <gemix-card>
     <div class="card-header">
-       50 Free Spins on Gemix
+       {{bonus?.amount}} {{bonus?.price}} on {{bonus?.game}}
     </div>
      <div class="card-body">
-      00:25
+      <ng-container *ngIf="time > 0; else timeElapsed">
+        {{countdown}}
+      </ng-container>
+      <ng-template #timeElapsed>
+          <p>Please refresh to get new bonus</p>
+      </ng-template>
      </div>
      <div class="card-actions">
-      <button [routerLink]="['/bonuses/claim-success']">Claim Now</button>
+      <button [disabled]="time === 0" (click)="gotoSuccess()">Claim Now</button>
      </div>
 </gemix-card>

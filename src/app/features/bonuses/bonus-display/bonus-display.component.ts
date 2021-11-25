@@ -49,6 +49,7 @@ export class BonusDisplayComponent implements OnInit {
  gotoSuccess(){
   this.router.navigate(['/bonuses/claim-success/:bonus',this.bonus])
  }
+ 
   ngOnDestroy() {
     this.sub.unsubscribe();
     clearInterval(this.interval);

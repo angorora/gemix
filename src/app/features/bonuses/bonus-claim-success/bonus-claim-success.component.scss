@@ -2,7 +2,7 @@
 
 
   .card-body {
-      font-weight: 500;
+      font-weight: bold;
     color: #00a49c;
     letter-spacing: 0;
     text-align: center;
@@ -10,6 +10,7 @@
     font-size: 3.5rem;
     @media (min-width: 425px) {
       font-size: 4rem;
+
     }
   }
 

@@ -11,6 +11,8 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    font-weight: bold;
+    line-height: 50px;
     @media (min-width: 425px) {
       width: 600px;
       height: 290px;
@@ -18,17 +20,26 @@
     ::ng-deep {
       .card-header {
         width: 100%;
+        @media (min-width: 425px) {
+          width: 400px;
+        }
         text-align: center;
       }
       .card-body {
         width: 100%;
         letter-spacing: 0;
         text-align: center;
-        line-height: 35px;
+        //line-height: 50px;
+        @media (min-width: 425px) {
+          width: 400px;
+        }
       }
       .card-actions {
         width: 100%;
+   
         button {
+          font-weight: bold;
+          line-height: 50px;
           width: 193px;
           height: 55px;
           border: none;

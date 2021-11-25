@@ -12,6 +12,6 @@ export class GemixApiService {
 
   public getBonusData():Observable<Bonus>{
     return this.http.get(this.dataURL)
-    .pipe(map(game => game['bonus']));
+                .pipe(map(game => game['bonus']));
   }
 }
